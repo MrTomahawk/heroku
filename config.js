@@ -27,12 +27,12 @@ config = {
         // ```
 
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                host: 'ec2-54-243-42-236.compute-1.amazonaws.com',
-                user: 'sygdsbtqqaixbb',
-                password: 'gv4YN2RVcujnI54ZnUw64528Ih',
-                database: 'dak53666463fnq',
+                host: process.env.POSTGRES_HOST,
+                user: process.env.POSTGRES_USER,
+                password: process.env.POSTGRES_PASSWORD,
+                database: process.env.POSTGRES_DATABASE,
                 port: '5432'            
             },
             debug: false
@@ -58,10 +58,10 @@ config = {
         database: {
             client: 'postgres',
             connection: {
-                host: 'ec2-54-243-42-236.compute-1.amazonaws.com',
-                user: 'sygdsbtqqaixbb',
-                password: 'gv4YN2RVcujnI54ZnUw64528Ih',
-                database: 'dak53666463fnq',
+                host: process.env.POSTGRES_HOST,
+                user: process.env.POSTGRES_USER,
+                password: process.env.POSTGRES_PASSWORD,
+                database: process.env.POSTGRES_DATABASE,
                 port: '5432'
             },
             debug: false
